@@ -1,14 +1,14 @@
 class Router
-  def initialize(meals_controller, customers_controller, employees_controller)
+  def initialize(meals_controller, customers_controller, sessions_controller)
     @meals_controller = meals_controller
     @customers_controller = customers_controller
-    @employees_controller = employees_controller
+    @sessions_controller = sessions_controller
     @running = true
   end
 
   def run
     while @running
-      @current_user = @employees_controller.login
+      @current_user = @sessions_controller.login
       while @current_user
         if @current_user.manager?
           manager_menu
