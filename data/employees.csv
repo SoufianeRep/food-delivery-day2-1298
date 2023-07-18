@@ -1,3 +1,5 @@
 id,username,password,role
 1,devi,secret,manager
 2,vincent,secret,rider
+3,dennis,secret,rider
+4,alan,secret,rider
