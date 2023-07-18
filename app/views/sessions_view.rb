@@ -1,4 +1,4 @@
-class EmployeesView
+class SessionsView
   def ask_for(thing)
     puts "Please enter your #{thing}"
     return gets.chomp
